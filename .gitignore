@@ -1,0 +1,11 @@
+#Ignore .mp3 files
+*.mp3
+
+#Ignore .csv files
+*.csv
+
+#Ignore .docx files
+*.docx
+
+#Ignore .ipynb files
+*.ipynb
