@@ -50,7 +50,7 @@ def read_create_historical_data(path_history: str) -> pd.DataFrame:
     """
     if os.path.exists(path_history) == True:
         #Read history if exists
-        df = pd.read_csv(path_history, parse_dates = ['Last used'])
+        df = pd.read_csv(path_history)
     else:
         #Create a CSV file with historical answers only for the first time if
         #it wasn't created yet
@@ -272,6 +272,8 @@ def play_and_save(samples: list,
                                  pd.DataFrame.from_records([new_row])],
                                 ignore_index = True)
 
+        #Sort history by 'Last used' column
+        history = history.sort_values('Last used').reset_index(drop = True)
         #Save history after every sample. This way, the progress will be
         #saved even if the program is stopped after a few samples.
         history.to_csv(path_history, index = False)
