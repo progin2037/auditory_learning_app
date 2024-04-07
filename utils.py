@@ -3,17 +3,19 @@ import random
 import re
 import numpy as np
 import pandas as pd
+import pygame
 from datetime import datetime, timedelta
 import time
-import pygame
 import win32api
 
 def get_paths(path_dir: str,
               form: str,
-              next_sound: bool) -> list:
+              next_sound: bool=False) -> list:
     paths = []
     for root, dirs, files in os.walk(path_dir):
-        if next_sound == False: #currently not implemented
+        #next_sound functionality isn't implemented yet, so False should be
+        #used all the time
+        if next_sound == False:
             dirs[:] = [d for d in dirs if d not in ['next_sound']]
         for file in files:
             full_path = os.path.join(root, file)
@@ -57,7 +59,8 @@ def get_samples(history: pd.DataFrame,
 
     #For historical data, only rows with 'Next use' date no greater than today
     #should be used.
-    to_repeat = history[pd.to_datetime(history[next_use_col]) <= pd.to_datetime(datetime.now())]
+    to_repeat = history[pd.to_datetime(history[next_use_col]) <=
+                        pd.to_datetime(datetime.now())]
     #Assign True if file path was in historical to repeat
     idxs_repeat = [x in list(to_repeat.File) for x in file_paths]
     #Get indexes of file paths from historical to repeat
@@ -71,7 +74,8 @@ def get_samples(history: pd.DataFrame,
         samples_new = random.sample(paths_without_history, NUM_SAMPLES_NEW)
     else:
         #Samples as much as possible if less rows than NUM_SAMPLES_NEW
-        samples_new = random.sample(paths_without_history, len(paths_without_history))
+        samples_new = random.sample(paths_without_history,
+                                    len(paths_without_history))
 
     if len(paths_with_history) >= NUM_SAMPLES_REPEAT:
         samples_hist = random.sample(paths_with_history, NUM_SAMPLES_REPEAT)
@@ -121,8 +125,7 @@ def play_and_save(samples: list,
                   form: str,
                   move_again_by: int,
                   doubleclick_sleep: float,
-                  path_history: str
-                  ):
+                  path_history: str):
     at_least_once_wrong = []
     mixer = pygame.mixer
     mixer.init()
@@ -130,16 +133,16 @@ def play_and_save(samples: list,
         date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
         sample = samples[0][0]
         in_history = samples[0][1]
-        
+
         #Print word to learn
         word = sample.split('\\')[-1]
         word = re.findall(rf'\d*\s*(.*)\s*{form}', word)[0]
         print('Phrase:', word)
         print('Path:', sample)
-    
+
         pygame.mixer.music.load(sample)
         pygame.mixer.music.play()
-    
+
         #If left mouse click - answered correctly,
         #if right mouse click - has to be played again
         mouse_click = left_right_mouse_click()
@@ -162,7 +165,7 @@ def play_and_save(samples: list,
         while pygame.mixer.music.get_busy() == True:
             continue
         time.sleep(doubleclick_sleep) #to avoid double-clicks
-        
+
         #If new
         if in_history:
             good = history.loc[history.Expression == word, 'Good count'].iloc[0] + int(answer)
@@ -185,10 +188,10 @@ def play_and_save(samples: list,
                 days_to_next = 2
             else:
                 days_to_next = 1
-    
+
         #Get next use time (this date + number of days to next in YYYY-MM-DD format)
         next_use = (pd.to_datetime(date) + timedelta(days = days_to_next)).strftime('%Y-%m-%d')
-    
+
         #Row to add/update in history
         new_row = {'Expression': word,
                    'File': sample,
@@ -205,7 +208,7 @@ def play_and_save(samples: list,
             history = pd.concat([history,
                                  pd.DataFrame.from_records([new_row])],
                                 ignore_index = True)
-    
+
         #Save history after every sample. This way the progress will be
         #saved even if the program is stopped after a few samples.
         history.to_csv(path_history, index = False)
