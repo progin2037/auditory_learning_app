@@ -9,28 +9,51 @@ import time
 import win32api
 
 def get_paths(path_dir: str,
-              form: str,
+              file_format: str,
               next_sound: bool=False) -> list:
+    """
+    Get all paths with a provided extention from a given directory and its
+    subfolders.
+    
+    Args:
+        path_dir (str): A main directory path
+        file_format (str): An extension of file names to iterate over
+        next_sound (bool): [Not implemented yet] Specifies if sound from
+            'next_sound' directory should be played (True) to signal that next
+            phrase has just started. Defaults to False (don't use sound signal)
+    Returns:
+        paths (list): All paths within the given directory
+    """
     paths = []
     for root, dirs, files in os.walk(path_dir):
         #next_sound functionality isn't implemented yet, so False should be
         #used all the time
         if next_sound == False:
+            #Keep paths that aren't from 'next_sound' directory
             dirs[:] = [d for d in dirs if d not in ['next_sound']]
         for file in files:
             full_path = os.path.join(root, file)
-            if full_path.endswith(form):
+            if full_path.endswith(file_format):
                 #Append the file name to the list
                 paths.append(os.path.join(root, file))
     return paths
 
 
 def read_create_historical_data(path_history: str) -> pd.DataFrame:
+    """
+    Read historical answers or create a file if there is no history.
+    
+    Args:
+        path_history (str): A path where historical answers are stored
+    Returns:
+        df (pd.DataFrame): A DataFrame with historical answers
+    """
     if os.path.exists(path_history) == True:
         #Read history if exists
         df = pd.read_csv(path_history, parse_dates = ['Last used'])
     else:
-        #Create history.csv only for the first time if it wasn't created yet
+        #Create a CSV file with historical answers only for the first time if
+        #it wasn't created yet
         df = pd.DataFrame(columns = ['Expression',
                                      'File',
                                      'Last used',
@@ -45,10 +68,20 @@ def read_create_historical_data(path_history: str) -> pd.DataFrame:
 def get_samples(history: pd.DataFrame,
                 next_use_col: str,
                 file_paths: list,
-                NUM_SAMPLES_NEW: int,
-                NUM_SAMPLES_REPEAT: int) -> list: 
+                num_samples_new: int,
+                num_samples_repeat: int) -> list: 
     """
     Get a list of samples to play. The samples are chosen randomly.
+    
+    Args:
+        history (pd.DataFrame): A DataFrame with historical answers
+        next_use_col (str): A column indicating when samples should be played
+            again at the earliest
+        file_paths (str): Paths to sound samples
+        num_samples_new (int): How many new samples should be played
+        num_samples_repeat (int): How many historical samples should be played
+    Returns:
+        samples (list): A list of samples to play
     """
     #Assign True if file path was in history
     idxs_with_history = [x in list(history.File) for x in file_paths]
@@ -69,35 +102,36 @@ def get_samples(history: pd.DataFrame,
     paths_with_history = list(np.array(file_paths)[idxs_repeat])
 
     #Sample from file paths
-    if len(paths_without_history) >= NUM_SAMPLES_NEW:
-        #Sample NUM_SAMPLES_NEW
-        samples_new = random.sample(paths_without_history, NUM_SAMPLES_NEW)
+    if len(paths_without_history) >= num_samples_new:
+        #Sample num_samples_new
+        samples_new = random.sample(paths_without_history, num_samples_new)
     else:
-        #Samples as much as possible if less rows than NUM_SAMPLES_NEW
+        #Samples as much as possible if less rows than num_samples_new
         samples_new = random.sample(paths_without_history,
                                     len(paths_without_history))
-
-    if len(paths_with_history) >= NUM_SAMPLES_REPEAT:
-        samples_hist = random.sample(paths_with_history, NUM_SAMPLES_REPEAT)
+    if len(paths_with_history) >= num_samples_repeat:
+        samples_hist = random.sample(paths_with_history, num_samples_repeat)
     else:
         samples_hist = random.sample(paths_with_history, len(paths_with_history))
 
-    #Add a 'column' to lists indicating if it was in history
+    #Add a column that indicates if the sample was already played in the past
+    #(True) of if the sample is new (False)
     samples_new = [(x, False) for x in samples_new]
     samples_hist = [(x, True) for x in samples_hist]
 
     #Merge lists. Historical first, then new
     samples = samples_hist + samples_new
-
     return samples
 
 
 def left_right_mouse_click() -> str:
     """
-    Checks what button is clicked on a computer mouse.
+    Check what button is clicked on a computer mouse.
     
     Returns:
-        mouse_button (str): Mouse button (left/right/middle)
+        mouse_button (str): Clicked mouse button (left/right). The middle
+            button functionality is provided in a comment, though it isn't yet
+            used
     """
     while True:
         left_button = win32api.GetKeyState(0x01)
@@ -108,35 +142,61 @@ def left_right_mouse_click() -> str:
         if right_button < 0:
             mouse_button = 'right'
             break
-        middle_button = win32api.GetKeyState(0x04)
-        if middle_button < 0:
-            mouse_button = 'middle'
-            break
+        #middle_button = win32api.GetKeyState(0x04)
+        #if middle_button < 0:
+        #    mouse_button = 'middle'
+        #    break
     return mouse_button
 
 
 def get_next_number_fibonacci(prev_num: int) -> int:
+    """
+    Get the next number from the Fibonacci sequence. It is used to calculate
+    when the sample should be run again at the earliest.
+    
+    Args:
+        prev_num (int): A previous number of days when the sample should be
+            run again, at the time when the sequence was last run
+    Returns:
+        next_num (int): A next number from the Fibonacci sequence indicating
+            when the sample should be run again
+    """
     next_num = round(prev_num * (1 + np.sqrt(5))/2)
     return next_num
 
 
 def play_and_save(samples: list,
                   history: pd.DataFrame,
-                  form: str,
+                  file_format: str,
                   move_again_by: int,
                   doubleclick_sleep: float,
                   path_history: str):
+    """
+    Play samples and save results based on the correctness of answers.
+    
+    Args:
+        samples (list): A list of samples to play
+        history (pd.DataFrame): A DataFrame with historical answers
+        file_format (str): An extension of file names
+        move_again_by (int): if answered wrongly, by how many phrases
+            the sample should be moved in the queue to be run again
+        doubleclick_sleep (float): Seconds to wait between mouse clicks to
+            avoid accidental double clicks
+        path_history (str): A path to historical answers        
+    """
     at_least_once_wrong = []
+    #Initialize pygame for playing a sound
     mixer = pygame.mixer
     mixer.init()
     while len(samples) > 0:
+        #Get today's date
         date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
         sample = samples[0][0]
         in_history = samples[0][1]
 
         #Print word to learn
         word = sample.split('\\')[-1]
-        word = re.findall(rf'\d*\s*(.*)\s*{form}', word)[0]
+        word = re.findall(rf'\d*\s*(.*)\s*{file_format}', word)[0]
         print('Phrase:', word)
         print('Path:', sample)
 
@@ -146,8 +206,7 @@ def play_and_save(samples: list,
         #If left mouse click - answered correctly,
         #if right mouse click - has to be played again
         mouse_click = left_right_mouse_click()
-    
-        #time.sleep(2)
+
         if mouse_click == 'left':
             answer = True
             #Remove from the list as answered correctly
@@ -182,6 +241,8 @@ def play_and_save(samples: list,
             else:
                 days_to_next = 1
         else:
+            #Sample should be run again after 1 day (if still wasn't answered
+            #correctly) or 2 days (if finally answered correctly)
             good = int(answer)
             again = 1 - int(answer)
             if answer:
@@ -189,10 +250,12 @@ def play_and_save(samples: list,
             else:
                 days_to_next = 1
 
-        #Get next use time (this date + number of days to next in YYYY-MM-DD format)
-        next_use = (pd.to_datetime(date) + timedelta(days = days_to_next)).strftime('%Y-%m-%d')
+        #Get a date when the sample should be run again (today +
+        #number of days to the next run in YYYY-MM-DD format)
+        next_use = (pd.to_datetime(date) + timedelta(days = days_to_next)).\
+            strftime('%Y-%m-%d')
 
-        #Row to add/update in history
+        #Row to add/update in the history
         new_row = {'Expression': word,
                    'File': sample,
                    'Last used': date,
@@ -204,11 +267,11 @@ def play_and_save(samples: list,
             #Update values
             history[history.Expression == word] = new_row.values()
         else:
-            #Append row
+            #Append row if the sample was run for the first time
             history = pd.concat([history,
                                  pd.DataFrame.from_records([new_row])],
                                 ignore_index = True)
 
-        #Save history after every sample. This way the progress will be
+        #Save history after every sample. This way, the progress will be
         #saved even if the program is stopped after a few samples.
         history.to_csv(path_history, index = False)
