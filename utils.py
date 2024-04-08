@@ -276,9 +276,9 @@ def play_and_save(samples: list,
             history = pd.concat([history,
                                  pd.DataFrame.from_records([new_row])],
                                 ignore_index=True)
-
-        # Sort history by 'Last used' column
-        history = history.sort_values('Last used').reset_index(drop=True)
         # Save history after every sample. This way, the progress will be
         # saved even if the program is stopped after a few samples.
         history.to_csv(path_history, index=False)
+    # Sort history by 'Last used' column and save final results
+    history = history.sort_values('Last used').reset_index(drop=True)
+    history.to_csv(path_history, index=False)
