@@ -209,12 +209,12 @@ def play_and_save(samples: list,
         # if right mouse click - has to be played again
         mouse_click = left_right_mouse_click()
         if mouse_click == 'left':
-            answer = True
+            correct_answer = True
             # Remove from the list as answered correctly
             print('Good')
             samples.pop(0)
         else:
-            answer = False
+            correct_answer = False
             print('Again')
             # Move to the nth element of the list to be played again
             # (or to last if less than 5 elements in the samples list)
@@ -229,27 +229,28 @@ def play_and_save(samples: list,
         # If new sample
         if in_history:
             good = history.loc[history.Expression == word,
-                               'Good count'].iloc[0] + int(answer)
+                               'Good count'].iloc[0] + int(correct_answer)
             again = history.loc[history.Expression == word,
-                                'Again count'].iloc[0] + 1 - int(answer)
-            if answer:
+                                'Again count'].iloc[0] + 1 - int(correct_answer)
+            if correct_answer:
                 # Find next Fibonacci number
                 prev_num = history.loc[history['Expression'] == word,
                                        'Days to next'].iloc[0]
                 if word in at_least_once_wrong:
-                    # If at least once wrong answer, set to 1 day
-                    days_to_next = 1
+                    # If finally correct but at least once wrong, set to 2 days
+                    days_to_next = 2
                 else:
                     # Set to the next number from the Fibonacci sequence
                     days_to_next = get_next_number_fibonacci(prev_num)
             else:
+                # If not answered correctly, set to 1 day
                 days_to_next = 1
         else:
-            # Sample should be run again after 1 day (if still wasn't answered
-            # correctly) or 2 days (if finally answered correctly)
-            good = int(answer)
-            again = 1 - int(answer)
-            if answer:
+            good = int(correct_answer)
+            again = 1 - int(correct_answer)
+            # New samples should be run again after 1 day (if still wasn't
+            # answered correctly) or 2 days (if answered correctly)
+            if correct_answer:
                 days_to_next = 2
             else:
                 days_to_next = 1
