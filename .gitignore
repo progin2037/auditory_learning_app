@@ -3,6 +3,7 @@
 
 #Ignore .csv files
 *.csv
+!words_with_sentences.csv
 
 #Ignore .docx files
 *.docx
