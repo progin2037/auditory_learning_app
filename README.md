@@ -35,20 +35,54 @@ The project was created using Python 3.11.5 with Windows 10. Below are listed st
 1. Clone this repository.
 2. Create a virtual environment for the project and install there packages from requirements (`pip install -r requirements.txt`)
 3. Create directories with sound samples to run. They should be placed withing the cloned repo.
+   1. Generating your own samples will be available soon. However, they will be only intended for learning English for now.
+   2. Examples of generated recordings will be also available after samples generation is implemented.
 4. Run main.py script. Click left mouse button if the phrase was understood, otherwise the right one.
    1. If your samples aren't in the .mp3 format, change `FORMAT = '.mp3'` line to the desired format.
    2. If you wish, you can change `NUM_SAMPLES_REPEAT = 5` and `NUM_SAMPLES_NEW = 3` lines that refer to, respectively,
 a number of historical samples to play and a number of new samples not yet played.
 5. To run the program again, run main.py script once again.
 
+## Samples generation
+Samples generation creates samples to learn English. Possibly, other languages will be supported when a multilingual Llama3 model is published.
+For now, only generating words with their use in sentences is created. An example of sentence generation is provided in words_with_sentences.csv.
+
+The completed steps of samples generation and the remaining ones are listed below:
+1. Generate words in English using LLama3 model.
+2. Generate sentences containing the generated words using Llama3 model.
+3. [To do] Translate words to another language.
+4. [To do] Translate sentences to another language.
+5. [To do] Use text-to-speech model to create recordings based on generated sentences.
+6. [To do] Evaluate results, fine-tune models if necessary.
+   1. Examine if generated words are adequate for the given CEFR level
+   2. Make sure that generated sentences are logical.
+   3. Assess translation performance.
+
+### Prompt engineering
+The process of generating prompts is presented below. It explains why different sentences were added to the prompts.
+1. Word generations:
+![images/explain_word_generation_prompt.png](images/explain_word_generation_prompt.png)
+2. Sentence generation:
+![images/explain_sentence_generation_prompt.png](images/explain_sentence_generation_prompt.png)
+
+### Issues
+Keep in mind that the output of words/sentences generation is not completely stable. Sometimes it still tends to ignore some of the instructions.
+Some observed issues where models don't follow instructions include:
+- generating words alphabetically, with the first letter between a-f, ignoring words starting with further letters,
+- generating words without alphabetical order only for some initial words, followed by words in alphabetical order that don't cover full first letter scope,
+- misunderstanding what word generation means and creating many words as one example,
+- keep generating similar phrases. Once, the model generated 'three times', 'five times' and then continued with larger numbers, ending with 'googolplex times'.
+Another time, its interest was with many different types of cheese or sauce,
+- ignoring some parts of speech,
+- most sentences are logical but not all of them,
+- some sentences seem to not be finished.
+
 ## Future ideas
 1. Create a config file for number of old/new samples and other parameters.
 2. Add a functionality to add and save historical results to SQL.
 3. Add next_sound functionality - a sound signal that informs that a new sentence has just started.
 4. Create a backup file (CSV/SQL) every month to not lose history by accident.
-5. Expand the project by possible more advance solutions:
+5. Expand the project by possible more advanced solutions:
    1. Generate images based on file names/sentences if available/audio content.
    2. Generate more examples with a given phrase.
-   3. Given a phrase to learn, automatically search web/existing models to get a recording that could then be used in the application. This
-   functionality will provide adding your own phrases to learn.
-   4. Add speach-to-text model that creates transcriptions from the recordings.
+   3. Add speach-to-text model that creates transcriptions from the recordings.
