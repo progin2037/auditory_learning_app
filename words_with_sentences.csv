@@ -1,0 +1,301 @@
+word,sentence_1,sentence_2,sentence_3
+city,The city lights shine brightly at night.,New technology improves city transportation systems.,Visit the city's famous historical landmarks.
+hotel,The hotel offered a comfortable night's sleep.,I checked into the luxurious hotel downtown.,The hotel staff helped us with luggage.
+restaurant,I love dining at the French restaurant.,The restaurant serves excellent Italian cuisine daily.,We reserved a table at the seafood restaurant.
+university,The university offers various academic programs.,She earned a degree from university.,The university campus is easily accessible.
+library,The library offers free membership cards.,My friend works at the library today.,The library has an old book shelf.
+computer,The new employee quickly mastered the computer.,My grandmother rarely uses a computer.,The teacher showed the students the computer.
+phone,I quickly grabbed the phone yesterday.,She found a phone in her bag.,The customer complained about the phone.
+bookshelf,The bookshelf held many popular novels.,She carefully arranged the bookshelf again.,The old bookshelf was in the attic.
+kitchen,"In the kitchen, we cook dinner.",The aroma of fresh bread kitchen fills.,"After a long trip, I rest kitchen."
+bedroom,My favorite book is in bedroom always.,The bedroom was very quiet suddenly.,Can I play music in my bedroom?
+car,The car drove down the highway.,She owned a bright red car.,Can you drive a manual car?
+bike,I rode my bike to school.,He fixed his bike carefully again.,Can I borrow your bike today?
+train,I'm excited to catch the train.,The train is delayed by storm.,I love the rhythm of train.
+bus,I took the bus to work.,The bus is late again today.,The bus driver was very nice.
+airport,"After arriving at the airport, I waited.","At the airport, I missed my flight.",The airport is very far from city.
+hospital,The doctor rushed the patient to hospital.,The injured hiker was taken to hospital.,I visited my friend in hospital.
+doctor,Doctor Smith examined my injured finger.,The doctor diagnosed the patient with flu.,Doctor recommended a series of tests.
+nurse,The nurse carefully monitors patient's condition.,Nurse assists surgeon during the operation.,Professional nurse helps patients feel better.
+patient,The doctor is very patient with children.,She has been a patient in this hospital.,The nurse is gentle with her patient.
+medicine,The doctor prescribed new medicine carefully.,She took her regular morning medicine promptly.,The hospital stocked emergency medicine quickly.
+food,Fresh food is always a priority.,This store offers international food options.,Students need nutritious food for growth.
+water,Please refill the water bottle with water.,The water quality in this river is bad water.,I love drinking cold water on summer water.
+coffee,I need a cup of coffee now.,She loves drinking coffee in the morning.,The aroma of freshly brewed coffee fills.
+tea,She sipped her hot tea slowly.,Can I have a cup of tea?,They served tea at the party.
+music,Music relaxes my tired body and mind.,Fast music energizes athletes during games.,Beautiful music soothes a crying baby.
+movie,The new movie premiered on Friday night.,She fell asleep during the boring movie.,The movie's special effects were stunning.
+theater,The drama performance took place at theater.,She worked at a small independent theater.,The play was a huge success at theater.
+museum,The city's famous museum hosts exhibitions.,Visitors marvel at the ancient museum artifacts.,The museum offers guided tours daily.
+gallery,The art gallery features local artists' works.,Museum's grand gallery showcases ancient civilizations.,Virtual gallery displays modern digital art online.
+park,Let's drive to the park tonight.,The new theme park opens tomorrow.,Can we walk to the city park?
+garden,"In my garden, I grow vegetables.",The beautiful garden attracted many visitors.,She loved playing in the garden.
+tree,The tall tree provides shade for all.,The small tree grows quickly in soil.,The ancient tree bears juicy fruit.
+flower,The gardener carefully planted the flower.,The scent of the flower filled the air.,The flower blooms in the spring season.
+animal,The zookeeper carefully handled the animal.,Animal lovers donated to the sanctuary.,The animal's loud roar echoed through.
+pet,She loves playing with her pet.,The dog is a good pet.,"Pet the cat, it's very gentle."
+friend,My friend lives in the city.,We will meet a friend soon.,She is a true friend always.
+family,The happy family lives in a mansion.,My family has a big dog at home.,The family always eats dinner together.
+home,I'm going home after work tonight.,She'll return home next weekend's holiday.,Can you call home to check up.
+office,The manager's office is located upstairs.,She works in the office every morning.,The company's office is very modern.
+school,The students attend school daily regularly.,My favorite teacher teaches at school.,School starts at eight o'clock morning.
+teacher,The teacher carefully explained the math problem.,My teacher always wears a bright smile.,The teacher helped me improve my writing.
+student,The student is studying mathematics diligently.,The student attends classes regularly enthusiastically.,The student needs to hand in homework late.
+classroom,The teacher welcomes students into the classroom.,Students are quiet in a noisy classroom.,The teacher uses a flipchart in the classroom.
+desk,The student placed her papers on desk.,The teacher stood beside her desk patiently.,She moved her chair to the desk.
+chair,The teacher sat in her chair.,Can you polish that chair carefully?,She carefully pushed the chair forward.
+table,She carefully carried the delicate vase to the table.,The teacher asked students to set the project table.,"After lunch, we moved to the conference table."
+lamp,She switched on the old lamp.,The lamp on the table is bright.,Can you hold the reading lamp?
+tv,The family gathers around the TV.,I love watching news on TV.,TV broadcasts the game tonight.
+radio,The news is broadcasted by radio daily.,My favorite song is played on radio.,The weather forecast is announced on radio.
+newspaper,I read the newspaper every morning.,The report in the newspaper was alarming.,The old man sells newspaper on street.
+magazine,I'm reading a new magazine today.,The shop sells only old magazines.,The conference will have a magazine sponsor.
+internet,The internet has changed the world.,Many people use the internet daily.,The internet is a big library.
+email,I forgot to write the email.,Can you send me an email?,She replied to my email yesterday.
+password,Please enter the correct password today.,"She forgot her password, so she reset it.",Use a strong password for online safety.
+account,Please settle the account by Friday evening.,The company is responsible for this account's mistake.,She gave an account of the accident to police.
+bank,Go to the bank to withdraw cash.,You need to deposit the check at bank.,The bank is located near city center.
+atm,I will meet you atm outside.,Can you pay me atm cash?,Please send me file atm today.
+credit card,I forgot to bring my credit card.,The store accepts all major credit cards.,Can I pay with my credit card?
+debit card,I always use my debit card online.,Paying rent is done with debit card.,She forgot her debit card at home.
+cash,"Please pay with exact cash only, please.",The store requires a lot of cash.,You should have some cash handy.
+check,Please check the weather forecast online regularly.,My professor told me to check my grades.,Can you check if this is the correct hotel?
+invoice,Please pay the outstanding invoice on time.,The company sent a formal invoice promptly.,We need to issue an invoice for services.
+receipt,I need to sign the receipt carefully.,Can I have a digital receipt please?,The cashier gave me a printed receipt.
+package,The e-commerce company sent a package quickly.,The holiday package included food and drinks.,The delivery team signed for the package.
+parcel,The delivery company sent a parcel daily.,Can you sign for the parcel please?,The online store ships all parcels free.
+letter,I love to read letter from my pen.,She carefully writes letter to her friend.,The postman delivered letter to my door.
+envelope,Please seal the letter in an envelope.,The envelope contained a surprise gift.,I'm waiting for my package in envelope.
+stamp,The postal worker carefully stamps each letter.,The artist carefully stamps her signature on canvas.,The hiker had to stamp out the fire.
+post office,The post office is located nearby.,I need to send a package post office today.,You can buy stamps at the post office.
+mailbox,Check your mailbox regularly every morning.,The postal worker empties the mailbox daily.,The letter arrived at the mailbox yesterday.
+address,Please address the letter to Mrs. Smith.,The company will address the customer's complaint.,"Can you address me in German, please?"
+map,The hiker used a topographic map.,She carefully unfolded the detailed city map.,The explorer relied on his trusty map.
+compass,The sailor used his compass to navigate.,The explorer relied on her compass deeply.,The map included a small compass.
+gps,The hiker relied on GPS devices.,GPS navigation helped us locate the village.,The delivery truck used GPS tracking.
+run,The athlete decides to run fast.,I love to run in parks.,The dog likes to run free.
+walk,Take a walk in nature carefully.,I'll walk to the nearby park.,The dog loves to walk freely.
+talk,Let's take a walk and talk.,Can you talk about your trip?,We need to talk about money.
+listen,"To improve her accent, she has to listen.","Can you listen to the teacher, please?","In a meeting, everyone must listen."
+read,Please read the instructions carefully tonight.,She read the book in just one day.,I need to read the news online daily.
+write,Please write down this important phone number.,Students should write short stories in class.,Write your name clearly on the page.
+learn,I need to learn this lesson again.,It's difficult to learn a new language.,Students learn from their mistakes slowly.
+study,"To improve my English, I study regularly.",She will study abroad in Italy next year.,The student carefully study the difficult math problem.
+work,She will work late tonight to finish project.,Hard work paid off with good results.,It is difficult to find work abroad.
+play,"""The pianist played the piano playfully.""","""Children play outside during school play.""","""The actor played the lead play."""
+relax,Take a deep breath and relax.,Let the music help you relax.,"Before the test, I need to relax."
+enjoy,"On weekends, she enjoys relaxing at home.",The kids will enjoy playing outside tomorrow.,The concert will be enjoyable with friends.
+explore,"Exploring the jungle, we found rare birds.","By exploring space, scientists discovered new worlds.","Exploring the internet, we found useful tutorials."
+discover,"As we explore, we discover hidden treasures.",The astronomer spent years to discover Mars.,"By reading, I discover new adventures."
+create,The artist can create beautiful paintings.,The team's strategy aims to create trust.,Teachers create engaging lessons to inspire.
+design,The graphic designer creates an innovative design.,The interior designer chooses a perfect design.,The software designer develops a user-friendly design.
+build,The contractor will build a new house.,We must build bridges between nations.,She loves to build sandcastles on beach.
+fix,The repairman will fix the broken bike.,She needs to fix her broken heart.,The teacher tells students to fix mistakes.
+repair,The broken car needs urgent repair.,The doctor will repair the broken bone.,The engineer's task is to repair the road.
+improve,The new software will help developers improve.,Exercise can help you improve your health.,Students can improve their language skills quickly.
+develop,The software will develop gradually over time.,Scientists aim to develop a new cure.,The company plans to develop a new app.
+progress,The company makes steady progress everyday.,Students' reading progress was significant last year.,The teacher tracks students' progress closely.
+succeed,She must focus to succeed in business.,Students will succeed with consistent practice.,Hard work helps students succeed academically.
+fail,"If I don't practice, I will fail.",The student's test score had fail.,The team was on the verge of fail.
+try,Try playing the guitar to relax.,She'll try cooking dinner tonight alone.,Don't try swimming in the polluted lake.
+practice,Regular piano practice helps children focus.,She needs more singing practice before the show.,Daily yoga practice improves mental clarity.
+repeat,Please repeat the password to access.,Repeat the instructions to understand clearly.,Repeat this phrase to memorize quickly.
+remember,Please remember to lock the door tonight.,Don't forget to remember your anniversary date.,You should remember to pack your umbrella.
+forget,Please don't forget to bring your book.,I forget my password again today.,They forget their anniversary last year.
+understand,I must study carefully to understand grammar rules.,Doctors take time to understand patient's symptoms.,She will only explain things to understand slowly.
+explain,The teacher asked the student to explain clearly.,The doctor tried to explain the treatment options.,The instructions failed to explain the setup process.
+describe,The artist's new sculpture describe its beauty perfectly.,The book's author describe the main character's flaws.,The guidebook describe the hiking trail's challenging parts.
+discuss,The team will discuss solutions tomorrow afternoon.,Students need to discuss their group project loudly.,The manager will discuss changes with employees.
+debate,The politicians will engage in debate tonight.,Students often debate controversial social issues.,The lawyers were known for their intense debate.
+argue,The lawyers argue complicated financial details.,Friends argue over who ate last pizza.,Scientists argue climate change is real.
+agree,We agree on the meeting time tonight.,The team agrees on the game plan.,Students agree on the project deadline.
+disagree,The economists strongly disagree with the forecast.,The friends politely disagree on the movie.,The scientist firmly disagrees with the theory.
+negotiate,The mediator helps them negotiate terms.,The manager will negotiate a better deal.,The team must negotiate with the supplier.
+compromise,Negotiators reached a compromise on the treaty.,"After long debate, they found a compromise.",The company made a compromise with the union.
+concede,The defeated candidate reluctantly concede the election.,The team's manager concede that their strategy wasn't perfect.,"After reviewing the data, the CEO concede a mistake."
+persuade,The salesperson tried to persuade me.,The lawyer's arguments will persuade the jury.,Her sweet words could not persuade him.
+convince,The passionate speech convinced the audience.,Her logical arguments convinced me quickly.,The convincing data convinced the investors.
+influence,Social media influencers impact online discussions.,Weather patterns influence climate changes greatly.,Experts believe education will influence decisions.
+motivate,The inspiring speech really motivate me to run.,The teacher's guidance motivate the students to excel.,The success story motivate us to take risks.
+inspire,Her speech will inspire young leaders globally.,The beautiful landscape will inspire artistic creativity.,New ideas will inspire innovative entrepreneurship always.
+encourage,The coach tries to encourage players.,New parents are eager to encourage.,Teachers use games to encourage.
+support,The athlete needs support from coach.,The teacher gives support to students.,The doctor provides medical support fast.
+help,She needs help finishing her project.,Can you lend a helping hand?,The doctor will provide help quickly.
+assist,The instructor will assist the students.,The nurse will assist the patient.,The robot will assist the workers.
+guide,The experienced tour guide took us.,This map will guide you through.,The teacher handed me a guide.
+direct,The manager takes direct responsibility for the project.,The pilot follows direct flight routes for efficiency.,The company provides direct customer service support.
+manage,The team struggled to manage deadlines effectively.,She needs to manage her social media presence.,The store aims to manage inventory efficiently.
+organize,The manager decided to organize meetings efficiently.,The new employee is struggling to organize tasks quickly.,The team must organize events successfully tonight.
+coordinate,The team must coordinate their efforts to win.,The navigation system coordinates our journey perfectly.,The project manager coordinates the workload efficiently.
+plan,The marketing team needs to plan campaigns effectively.,"By plan, we will reach our target soon.",The teacher asks students to plan their project.
+schedule,I check my schedule every morning.,The team reviews the project schedule daily.,She carefully planned her vacation schedule.
+prioritize,The project manager will prioritize tasks tonight.,"To reduce stress, we must prioritize self-care.",She knows how to prioritize her goals.
+focus,The coach helped the player focus attention.,She struggled to focus on her book.,The new software allows users to focus.
+concentrate,Listen carefully to concentrate the noise.,She needs to concentrate before the exam.,"To fix the problem, you must concentrate."
+distract,The loud music will distract me from work.,Her chatty friend tried to distract her friend.,The squirrel's antics distract the children quickly.
+interrupt,The student's loud voice interrupt the teacher's lecture.,The phone's ringing sound interrupt his important thought.,The sudden noise interrupt the peaceful morning scene.
+continue,"Please continue reading the instructions carefully, thank you.",Can I continue working on this project tonight?,She plans to continue her studies next year.
+stop,Please stop the train at station 5.,Stop what you're doing and take a break.,Stop fighting and let's talk about it.
+start,Start early to avoid morning traffic.,Start practicing yoga to improve flexibility.,Start speaking slowly to be understood.
+resume,"After graduating, I will write my resume.",The company asked for my resume online.,I will polish my resume this weekend.
+pause,Take a pause and think carefully.,Please pause the video for a moment.,"Before speaking, pause and collect your thoughts."
+finish,Please finish the report by tomorrow.,"Finish the puzzle, it's almost complete.","Finish your breakfast, we're running late."
+complete,The doctor will complete the surgery tomorrow.,The project requires me to complete tasks.,Can you complete the form online now?
+achieve,Students can achieve excellent grades with hard work.,The company aims to achieve significant profits soon.,"With dedication, she will achieve her goals."
+accomplish,The team will accomplish their goals tonight.,She strives to accomplish new skills daily.,The project aims to accomplish its objectives.
+overcome,The brave firefighter learned to overcome fear.,Determined students will overcome language barriers.,The athlete must overcome physical weaknesses.
+master,The musician became a master of strings.,He wants to master the French language.,The chef is a master of sauces.
+control,She exercises control over her emotions daily.,The pilot maintains control during turbulence.,The government seeks control over the economy.
+regulate,The government aims to regulate pollution levels.,Doctors learn to regulate their patients' breathing.,The app helps users regulate their screen time.
+monitor,The teacher closely monitors student progress daily.,The doctor uses a monitor to track health.,The airline pilot relies on flight monitor.
+supervise,Trained instructors will supervise new employees closely.,Parents should supervise their children during playtime.,Managers must supervise projects closely for efficiency.
+inspect,The police inspector examined the crime scene.,We must inspect the car before buying.,The doctor will inspect the patient's wound.
+examine,The doctor examines the patient's medical history.,Scientists examine the fossil to learn more.,The detective carefully examines the crime scene.
+investigate,Police will investigate the suspicious noise.,Scientists investigate the effects of pollution.,Journalists aim to investigate government corruption.
+research,Scientists conduct extensive research worldwide daily.,The teacher asked students to research topics.,Conduct thorough research before making a decision.
+analyze,Scientists must analyze data carefully daily.,Experts analyze customer behavior to predict sales.,Medical teams analyze symptoms to diagnose disease.
+evaluate,The professor will evaluate student's performance annually.,The chef must evaluate each dish carefully.,The team needs to evaluate its strategy quickly.
+assess,The teacher will assess student performance carefully.,Experts assess the risks of climate change.,The doctor will assess your medical condition.
+diagnose,The doctor carefully diagnose the patient's symptoms.,The expert team has diagnose the issue promptly.,The software can automatically diagnose the problem.
+treat,She saved her money to buy a treat.,The chef prepared a special treat yesterday.,The child waited excitedly for her treat.
+cure,The doctor found the cure for cancer.,Modern medicine is searching for a cure.,The antibiotic provided a temporary cure.
+prevent,Strict safety measures can prevent accidents.,Advanced warning systems prevent catastrophic failures.,Proper medicine can prevent illnesses from spreading.
+avoid,"To get sick, avoid contaminated food and water.",He avoids talking about his failed business venture.,"To prevent accidents, always avoid distractions while driving."
+ignore,Listen carefully and don't ignore the warning signs.,"To avoid mistakes, ignore irrelevant details thoroughly.","In a quiet room, ignore background noise carefully."
+neglect,The teacher warned students to not neglect homework.,The patient suffered from neglect in the hospital.,She accused him of neglecting their relationship.
+consider,Investors must consider market trends before trading.,Doctors consider various options before performing surgery.,Job applicants should consider their skills carefully.
+think,I think it's a very good idea.,He thinks she's hiding something from him.,We should think carefully before making a decision.
+reflect,The scientist's data will reflect the experiment's outcome.,The company's marketing strategy will reflect customer needs.,The teacher's words often reflect her own experiences.
+ponder,The professor spends hours to ponder theories.,The entrepreneur will ponder investment strategies tonight.,She likes to ponder life's big questions.
+meditate,She likes to meditate daily at dawn.,The book helps you to meditate better.,People often meditate to reduce stress.
+contemplate,"As I stood by the river, I contemplate my future.",The philosopher spent hours contemplate the mysteries of life.,The CEO asked her team to contemplate a new strategy.
+imagine,Imagine a sunny day at the beach.,Imagine the sound of a rushing waterfall.,Imagine reading a book in a quiet café.
+visualize,"To solve math problems, visualize the numbers clearly.","In meditation, I must visualize a peaceful scene.","To create art, first visualize the composition fully."
+predict,The meteorologist can predict the weather forecast.,Scientists predict a new disease outbreak soon.,Researchers predict the impact of climate change.
+forecast,The weather forecast predicts sunny days next week.,The financial forecast indicated a moderate growth rate.,The meteorologists updated the storm forecast this morning.
+anticipate,Students often anticipate an exciting presentation tomorrow.,The weather forecast predicts we will anticipate thunderstorms.,Expert analysts anticipate a price drop in autumn.
+expect,I expect good news from my doctor.,The forecast expects heavy rain tomorrow morning.,She expects us to be on time.
+hope,She holds on to hope every night.,My only hope was a miracle then.,The town's hope lies in the mayor.
+wish,I wish the weather was sunny today.,She wishes she had more time off.,We wish our team had won yesterday.
+desire,Her greatest desire is to travel abroad.,He feels a strong desire to succeed.,The company's desire is to grow fast.
+need,She need fresh air every morning.,The company need more marketing funds.,I need a new phone battery now.
+want,I want to spend more time reading.,She want to be a doctor someday.,They want a new house immediately.
+like,I sing like a professional singer always.,She speaks English like a native always.,He runs like a cheetah always.
+love,I have never felt such love before.,He shared his love with everyone equally.,The couple's love will last forever.
+hate,I hate waiting in long lines.,The child hates eating broccoli vegetables.,He hates the noise of construction sites.
+fear,The dark forest sparked a deep fear.,Public speaking often awakens great fear.,The doctor calmed the patient's fear.
+anxious,She was anxious to finish the exam.,He felt anxious about his first flight.,The patient was anxious to receive treatment.
+nervous,She felt nervous on her first flight.,The candidate was nervous during the interview.,I'm feeling nervous about the big test.
+excited,The kids were excited for Halloween night.,The football fans were excited about victory.,The tourists were excited to visit Paris.
+happy,She is happy playing outside daily.,The children are happy at school.,The song made me feel happy.
+sad,The news made her feel sad.,Her sad eyes reflected her sorrow.,The sad song brought tears to eyes.
+angry,She became angry with her boss.,He got angry when losing the game.,The crowd became angry at the delay.
+frustrated,"After waiting in line, she felt frustrated.",The customer support team left him frustrated.,His slow computer made him feel frustrated.
+tired,"After a long flight, I was tired.",The athlete was tired after the marathon.,My sister was tired from studying all night.
+sleepy,"After lunch, I feel sleepy.",The sleepy cat curled up tight.,I take a nap when sleepy.
+hungry,The wolf is hungry for dinner.,The dog gets hungry every evening.,Tourists often get hungry on hikes.
+thirsty,"After hiking, the traveler felt thirsty.",The cat became thirsty after eating fast.,She gave me water when I was thirsty.
+cold,The winter morning was very cold.,She caught a cold from her friend.,The medicine quickly cooled the cold.
+hot,The pizza was hot and aromatic.,The hot summer days were exhausting.,The new laptop ran hot all day.
+wet,The umbrella is very wet today.,The wet pavement is slippery road.,The dog loves playing with wet ball.
+dry,The dry riverbed was perfect for hiking.,Please dry your hands before leaving the bathroom.,The air was dry and uncomfortable to breathe.
+clean,The janitor keeps the office clean.,She prefers to clean her room.,Clean water is essential for health.
+dirty,The farmer washed his dirty clothes daily.,She refused to touch the dirty plate.,The dog ran through the dirty water.
+fresh,The baker served fresh bread at lunch.,"After a long sleep, I felt fresh.",The teacher gave students fresh pencils.
+stale,The aroma of fresh bread replaced stale air.,Stale jokes fell flat at the party.,Leftover pizza was no longer stale.
+old,The old clock hung on the wall.,The old book was worth a fortune.,My old friend moved to France.
+new,I've seen the new movie last night.,The new employee is very helpful.,This new book is on the bestseller list.
+big,The big dog ran quickly down.,The big red truck drove slowly.,The big mountain towered over valley.
+small,The small dog wagged its tail proudly.,This small book has many stories.,The small bird sang a sweet song.
+fast,Drive fast on the highway carefully.,She runs fast in the morning jog.,Send emails fast to meet deadlines.
+slow,The driver was going slow down the hill.,The teacher spoke slow for the students.,The pace of the game was slow.
+loud,The music was loud and intense.,The thunderstorm made a loud crash.,The fire alarm sounded loud suddenly.
+quiet,The librarian asked everyone to remain quiet.,"After the storm, the forest was quiet.",The athlete made a quiet comeback.
+bright,The bright sunshine lit up the morning.,The bright stars twinkled in the night.,The bright idea changed the company's strategy.
+dark,The room was dark and silent.,She walked alone in the dark.,The dog ran into the dark.
+clear,Please make the instructions on the map clear.,The air was clear after the storm.,Can you speak loud and make it clear?
+cloudy,The weather forecast predicted a cloudy day.,The pilot navigated through the cloudy skies.,The photo shoot was postponed due to cloudy.
+sunny,The sunny day was perfect for swimming.,We went for a walk on a sunny afternoon.,The sunny weather made me feel happy.
+rainy,The dog runs quickly on rainy days.,I love taking long walks on rainy.,The wet streets get very slushy rainy.
+snowy,The forest was quiet on a snowy.,The villagers prepared for the snowy.,The little girl loved playing in snowy.
+foggy,The morning drive was foggy and slow.,The mountain road was foggy and steep.,Visibility was poor due to foggy weather.
+misty,The morning walk was taken misty.,The photograph showed the old misty.,It was a misty evening song.
+hazy,The morning was hazy with fog.,"The forecast was unclear, hazy with uncertainty.",Memories of childhood were hazy and unclear.
+smoky,The campfire was getting smoky at night.,The old car was filled with smoky fumes.,The volcano's smoky peak was visible afar.
+dusty,The old bookshelf was covered in dusty books.,I kicked up dusty clouds of dirt.,The attic was filled with dusty trunks.
+polluted,The air in the city is polluted.,Industrial waste polluted the nearby river.,The polluted water was causing disease.
+pure,The mountain spring water is pure and clear.,The artist mixed pure colors for painting.,She drank pure spring water for health.
+simple,The recipe uses simple ingredients only.,The solution is simple and easy to understand.,The game has simple rules to follow.
+complex,The algorithm was too complex for beginners.,The architect designed the complex with ease.,The mathematician simplified the complex equation.
+easy,Understanding English grammar is easy now.,Following a recipe is easy too.,The new software is easy to use.
+difficult,The new math problem was difficult to solve.,It's difficult to learn a new language fast.,The mountain trail was difficult to climb alone.
+interesting,The professor's lecture on astronomy was interesting.,The news about the new technology is interesting.,Her story about traveling abroad was interesting.
+boring,The book was so boring to read.,The lecturer's speech was incredibly boring.,The party became boring after two hours.
+fun,I always have fun playing video games.,It's more fun to play outside than in.,The amusement park had a lot of fun.
+tedious,The tedious process of assembling the puzzle took hours.,The professor's tedious lectures made students sleepy.,The tedious task of data entry required great patience.
+challenging,The math exam was particularly challenging today.,The teacher found the new lesson plan quite challenging.,Climbing the mountain was a mentally challenging experience.
+rewarding,Studying for exams can be rewarding.,Helping others can be a rewarding.,Working on a challenging project is rewarding.
+unpredictable,The weather forecast struggled to predict the unpredictable.,Her mood swings were quite unpredictable today.,The stock market's movements are often unpredictable.
+reliable,The mechanic uses reliable tools always.,She chose a reliable taxi service online.,His friend is a reliable weather forecaster.
+trustworthy,She has always been a trustworthy friend to me.,The company prides itself on being a trustworthy brand.,The detective knew he had to find a trustworthy informant.
+honest,The detective was honest about his mistakes.,She kept her words honest with promises.,His friend was honest about his feelings.
+dishonest,He was caught being dishonest on his report.,Her dishonest comments hurt my feelings deeply.,The detective exposed the thief's dishonest scheme.
+fair,The judge ensured a fair trial.,She played fair and won the game.,The fair market value is $500.
+unfair,The judge's decision was unfairly biased against him.,The competition rules are unfair to new entrants.,The referee called an unfair penalty shot.
+just,I'm just getting started on this project.,She just finished her first degree just.,The bus just arrived at the stop.
+unjust,The judge ruled the verdict was unjust.,He spoke out against the unjust laws.,"The company was accused of unfair, unjust wages."
+kind,The generous friend was very kind.,"He's a kind soul, always helping others.",The teacher asked the kind student first.
+cruel,The dictator's laws were cruel and unfair.,The cruel gossip spread quickly through school.,The cruel winter storm damaged many homes.
+generous,"She was generous with her time, helping friends.",His generous nature made him popular everywhere.,The hotel owner was generous with breakfast.
+stingy,The rich businessman was always stingy with tips.,The budget cuts were a result of being stingy.,She was too stingy to share her food.
+polite,"When asking for directions, be polite.",A polite response is always appreciated.,He learned to be polite quickly.
+rude,The customer service representative was rude.,The rude comment shocked the entire class.,My brother can be quite rude sometimes.
+friendly,The hotel staff was friendly and helpful.,Her friendly demeanor made me feel at ease.,The teacher's friendly tone put the student at ease.
+hostile,The environment turned hostile towards the explorers.,The detective had to navigate a hostile crowd.,The aggressive tone made the conversation hostile.
+cooperative,The team was cooperative during the project.,She encouraged a cooperative attitude in the class.,The farmers' cooperative helped with the harvest.
+competitive,The new marketing strategy is competitive.,Her competitive nature drives her forward.,The startup company is very competitive.
+collaborative,The research team adopted a collaborative approach.,The designers implemented a collaborative workflow system.,The teachers emphasized the importance of a collaborative culture.
+independent,The country gained independent status in 1989.,She became independent after her divorce last year.,The company's independent research led to a breakthrough.
+dependent,The success of the project was dependent on timely funding.,She was dependent on her friends for emotional support.,The company's profits are dependent on global market trends.
+autonomous,The autonomous vehicle drove through the city safely.,The autonomous decision-making process takes a few hours.,The pilot had to take control from the autonomous ship.
+interdependent,Human societies are complex and interdependent.,Ecosystems rely on species that are interdependent.,Economic systems need markets that are interdependent.
+flexible,The new employee demonstrated a flexible schedule.,This yoga mat is very flexible material.,The company needs a flexible payment plan.
+inflexible,The company's pricing policy is inflexible.,Her attitude towards change is inflexible.,The teacher's rules are inflexible today.
+adaptable,The company's marketing strategy is adaptable.,This software is adaptable to different platforms.,The new employee proved very adaptable.
+resilient,The small business remained resilient in crisis.,She proved to be a resilient competitor.,The ancient city showed resilient architectural features.
+vulnerable,The elderly are often vulnerable to scams.,A nation's infrastructure can be vulnerable to floods.,The artist's paintings depict vulnerable inner struggles.
+strong,The athlete has a strong willpower.,The new medicine has strong effects.,The strong wind destroyed the bridge.
+weak,The team's defense was weak against attacks.,Her weak voice struggled to be heard.,The old man's legs had become weak.
+healthy,Eating a healthy breakfast gives energy.,Exercising regularly keeps a healthy body.,Drinking plenty of water is healthy.
+sick,The doctor said the patient was sick.,She felt sick after eating bad food.,The cat was sick and needed care.
+wealthy,The wealthy investor donated to charity.,Many wealthy people own luxury cars.,The wealthy family moved to a mansion.
+poor,The poor family struggled to make ends meet.,The poor quality of the food was disappointing.,The poor student was struggling in his studies.
+rich,The company's new policy is rich.,The king's treasure chest was rich.,Her father's experience is rich.
+famous,She is a famous pop star today.,The Eiffel Tower is famous worldwide too.,He is a famous actor now ever.
+unknown,The new employee's skills were unknown.,The exact location was unknown to us.,Her past was shrouded in unknown.
+successful,The entrepreneur's new product was successful.,The athlete's training was quite successful.,The manager's new strategy was very successful.
+failure,Lack of practice often leads to failure.,His failure to meet deadlines was costly.,The company's failure to innovate was fatal.
+winner,The confident boxer was a true winner.,She felt like a winner after her first sale.,The student was a winner at the debate.
+loser,He's considered a loser in the game.,The loser of the election conceded defeat.,You can't be a loser in business.
+leader,The team's leader made important decisions quickly.,A leader emerged during the wilderness trek.,She became a leader in her community.
+follower,The fashion follower always buys the latest trends.,My friend is a social media follower.,"In ancient Egypt, pharaoh was the divine follower."
+manager,The project manager oversees all team tasks.,The new manager boosts office morale daily.,The sales manager meets with clients weekly.
+employee,The company hired a new employee today.,The employee received a bonus yesterday evening.,The team leader thanked the employee warmly.
+boss,The boss was very satisfied with work.,Who is the boss at this office?,My boss told me to relax tonight.
+colleague,My colleague helped me finish the project.,She apologized to her colleague publicly.,The colleague from sales joined the meeting.
+neighbor,My neighbor is planning a surprise party.,The new family in our neighbor moved in slowly.,I helped my neighbor fix the broken fence.
+stranger,A kind stranger helped me find my way.,Stranger danger is a topic at school.,I met a friendly stranger at the cafe.
+acquaintance,The new colleague became a friendly acquaintance.,She introduced me to her acquaintance.,Having a mutual acquaintance was helpful.
+friend,My best friend lives in Paris.,I trust my friend completely now.,This friend is so kind always.
+enemy,The detective solved the mystery before enemy escaped.,The king's enemy was a powerful sorcerer.,The athlete trained hard to defeat enemy player.
+ally,The country became a close ally.,The company seeks a new ally.,The superhero had a secret ally.
+partner,My business partner helps me decide.,She is my dance partner tonight.,My workout partner keeps me going.
+customer,The customer usually arrives on time.,Customer satisfaction is our top priority.,The sales representative helped the customer.
+supplier,The company relies on the supplier heavily.,The new product requires a reliable supplier.,We need to find a quality supplier.
+investor,The savvy investor allocated funds wisely abroad.,He was a cautious investor in real estate.,The wealthy investor sponsored research projects globally.
+entrepreneur,The successful entrepreneur built a strong brand.,An innovative entrepreneur created a new app.,Many entrepreneurs rely on online marketplaces.
+employer,The employer expected punctual attendance daily.,"As an employer, he valued teamwork highly.",The employer provided training to employees.
+employee,The company trained its new employee carefully.,The employee reported for duty late again.,She was promoted to senior employee quickly.
+volunteer,She decided to volunteer at local charity events.,Many students volunteer to help with environmental projects.,He will volunteer to coach children's soccer teams.
+activist,The environmental activist organized a protest march.,The human rights activist spoke at the rally.,The social activist started a charity drive.
+citizen,The responsible citizen always pays taxes.,A loyal citizen supports their country's leaders.,The honest citizen stands up against injustice.

@@ -88,7 +88,7 @@ def generate_sentences(model_name: str,
         n_sentences (int): Number of sentences to generate
         max_words_per_sen (int): Maximum number of words per sentence
         level_sen (str): CEFR level for sentences to generate
-        save_output (bool): Save generated sentences to pickle (True) or not (False)
+        save_output (bool): Save generated sentences to .csv (True) or not (False)
     Returns:
         sentences_df (pd.DataFrame): A DataFrame with generated words and sentences
     """
@@ -139,7 +139,7 @@ def generate_sentences(model_name: str,
         words_sentences.append([word] + [x for x in output])
     sentences_df = pd.DataFrame(words_sentences, columns=['word', 'sentence_1', 'sentence_2', 'sentence_3'])
     if save_output:
-        sentences_df.to_pickle('words_with_sentences.pkl')
+        sentences_df.to_csv('words_with_sentences.csv', index=False)
     return sentences_df
 
 
