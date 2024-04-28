@@ -60,9 +60,11 @@ The completed steps of samples generation and the remaining ones are listed belo
 
 ### Prompt engineering
 The process of generating prompts is presented below. It explains why different sentences were added to the prompts.
-1. Word generations:
+1. Word generation:
+
 ![images/explain_word_generation_prompt.png](images/explain_word_generation_prompt.png)
 2. Sentence generation:
+
 ![images/explain_sentence_generation_prompt.png](images/explain_sentence_generation_prompt.png)
 
 ### Issues
