@@ -221,22 +221,22 @@ def play_and_save(samples: list,
             samples.insert(move_again_by, (sample, True))
             samples.pop(0)
             # Keep track of phrases that have to be repeated at least once
-            at_least_once_wrong.append(word)
+            at_least_once_wrong.append(sample)
         while pygame.mixer.music.get_busy():
             continue
         time.sleep(doubleclick_sleep)  # to avoid double-clicks
 
         # If new sample
         if in_history:
-            good = history.loc[history.Expression == word,
+            good = history.loc[history.File == sample,
                                'Good count'].iloc[0] + int(correct_answer)
-            again = history.loc[history.Expression == word,
+            again = history.loc[history.File == sample,
                                 'Again count'].iloc[0] + 1 - int(correct_answer)
             if correct_answer:
                 # Find next Fibonacci number
-                prev_num = history.loc[history['Expression'] == word,
+                prev_num = history.loc[history['File'] == sample,
                                        'Days to next'].iloc[0]
-                if word in at_least_once_wrong:
+                if sample in at_least_once_wrong:
                     # If finally correct but at least once wrong, set to 2 days
                     days_to_next = 2
                 else:
@@ -270,7 +270,7 @@ def play_and_save(samples: list,
                    'Again count': again}
         if in_history:
             # Update values
-            history[history.Expression == word] = new_row.values()
+            history[history.File == sample] = new_row.values()
         else:
             # Append row if the sample was run for the first time
             history = pd.concat([history,
