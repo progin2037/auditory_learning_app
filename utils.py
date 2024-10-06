@@ -163,6 +163,8 @@ def get_next_number_fibonacci(prev_num: int) -> int:
             when the sample should be run again
     """
     next_num = round(prev_num * (1 + np.sqrt(5))/2)
+    # Next number should be not less than 3
+    next_num = max(next_num, 3)
     return next_num
 
 
@@ -190,6 +192,7 @@ def play_and_save(samples: list,
     mixer = pygame.mixer
     mixer.init()
     while len(samples) > 0:
+        print(f'{len(samples)} left')
         # Get today's date
         date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
         sample = samples[0][0]
@@ -226,7 +229,7 @@ def play_and_save(samples: list,
             continue
         time.sleep(doubleclick_sleep)  # to avoid double-clicks
 
-        # If new sample
+        # If sample from history
         if in_history:
             good = history.loc[history.File == sample,
                                'Good count'].iloc[0] + int(correct_answer)
@@ -249,9 +252,9 @@ def play_and_save(samples: list,
             good = int(correct_answer)
             again = 1 - int(correct_answer)
             # New samples should be run again after 1 day (if still wasn't
-            # answered correctly) or 2 days (if answered correctly)
+            # answered correctly) or 3 days (if answered correctly)
             if correct_answer:
-                days_to_next = 2
+                days_to_next = 3
             else:
                 days_to_next = 1
 

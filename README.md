@@ -21,7 +21,7 @@ answers are listed below:
 * If the phrase was understood by the user but not immediately (right mouse button was clicked at least once), the sample
 will be played again after 2 days,
 * If the phrase was understood by the user, it will be played again after the number
-of days being the next number from the Fibonacci sequence. This way, if the phrase is
+of days being the next number from the Fibonacci sequence (minimum 3). This way, if the phrase is
 easy for the user, it will be played again with increasing intervals of time.
 
 The history of learning is stored in a history.csv file. The user could see there details about each phrase that was run
